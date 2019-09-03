@@ -199,7 +199,7 @@ client.on('message', message => {
 
 client.on('message', message => {
    if (message.content.startsWith(".8ball")) { //Supposed to delete message
-    var answer = myArray[Math.floor(Math.random()*eightballarray.length)];
+    var answer = eightballarray[Math.floor(Math.random()*eightballarray.length)];
       message.channel.send("You shake the ball...");
       setTimeout(function(){
           message.channel.send(answer);
