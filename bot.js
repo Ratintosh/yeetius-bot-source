@@ -170,8 +170,11 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.content === '.8ball') {
-		message.channel.send('You shake the 8ball. Your results...');
-	}
+    message.channel.send('You shake the 8ball... Your results:')
+    setTimeout(function(){
+        message.channel.send('awwww man');
+    }, 1000);
+  }
 });
 
 
