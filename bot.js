@@ -158,6 +158,12 @@ client.on('message', message => {
     message.channel.send(food3);
     message.channel.send(food4);
     message.channel.send('``This script was pulled from my website: https://foxxgaming.github.io/Projects/gen.html?``');
+
+    //REFRESHES ARRAY
+    var food1 = myArray[Math.floor(Math.random()*myArray.length)];
+    var food2 = myArray[Math.floor(Math.random()*myArray.length)];
+    var food3 = myArray[Math.floor(Math.random()*myArray.length)];
+    var food4 = myArray[Math.floor(Math.random()*myArray.length)];
 	}
 });
 
