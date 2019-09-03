@@ -46,7 +46,7 @@ var eightballarray = [
   "You may rely on it."
 ];
 
-client.on('ready', () => { client.user.setGame('Use .help for help'); });
+client.on('ready', () => { client.user.setGame('.help'); });
 
 
 
