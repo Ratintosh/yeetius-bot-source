@@ -169,7 +169,10 @@ client.on('message', message => {
    }
 });
 
-exports.run = async (client, message, args) => {
+
+
+exports.run = async ('message', message => {
+  if (message.content === ".meme") {
     try {
         const { body } = await snekfetch
             .get('https://www.reddit.com/r/dankmemes.json?sort=top&t=week')
@@ -188,7 +191,8 @@ exports.run = async (client, message, args) => {
     } catch (err) {
         return console.log(err);
     }
-}
+  }
+});
 
 
 client.login(process.env.BOT_TOKEN)
