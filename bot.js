@@ -5,6 +5,7 @@ require('events').EventEmitter.defaultMaxListeners = 180;
 
 var step;
 
+for (let step = 0; step < 50000000; step++) {
 //Role picker
 var myArray = [
   "Pickles",
@@ -26,7 +27,7 @@ var food1 = myArray[Math.floor(Math.random()*myArray.length)];
 var food2 = myArray[Math.floor(Math.random()*myArray.length)];
 var food3 = myArray[Math.floor(Math.random()*myArray.length)];
 var food4 = myArray[Math.floor(Math.random()*myArray.length)];
-
+}
 
 
 client.on('ready', () => { client.user.setGame('Use .help for help'); });
@@ -165,7 +166,7 @@ client.on('message', message => {
 
 client.on('message', message => {
    if (message.content === ".help") { //Supposed to delete message
-      message.channel.send('**COMMANDS**\n-------------------\n.say <message> **Makes me say something**\n.info **Sends you bot info**\n.sandwich **Generates a random sandwich that you must eat**\ni shouldnt be here...);
+      message.channel.send('**COMMANDS**\n-------------------\n.say <message> **Makes me say something**\n.info **Sends you bot info**\n.sandwich **Generates a random sandwich that you must eat**\ni should be here...);
    }
 });
 
