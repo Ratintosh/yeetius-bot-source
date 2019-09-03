@@ -153,18 +153,18 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.content === '.sandwich') {
+    var food1 = myArray[Math.floor(Math.random()*myArray.length)];
+    var food2 = myArray[Math.floor(Math.random()*myArray.length)];
+    var food3 = myArray[Math.floor(Math.random()*myArray.length)];
+    var food4 = myArray[Math.floor(Math.random()*myArray.length)];
+//REFRESHER FIRST?
+
 		message.channel.send(food1);
     message.channel.send(food2);
     message.channel.send(food3);
     message.channel.send(food4);
     message.channel.send('``This script was pulled from my website: https://foxxgaming.github.io/Projects/gen.html?``');
-    setTimeout(function(){
-    //REFRESHES ARRAY
-    var food1 = myArray[Math.floor(Math.random()*myArray.length)];
-    var food2 = myArray[Math.floor(Math.random()*myArray.length)];
-    var food3 = myArray[Math.floor(Math.random()*myArray.length)];
-    var food4 = myArray[Math.floor(Math.random()*myArray.length)];
-  }, 5000);
+
 	}
 });
 
