@@ -28,15 +28,9 @@ var food4 = myArray[Math.floor(Math.random()*myArray.length)];
 
 
 
-bot.on('ready', () => {
-    bot.user.setStatus('available')
-    bot.user.setPresence({
-        game: {
-            name: 'with depression',
-            type: "STREAMING",
-            url: "https://www.twitch.tv/monstercat"
-        }
-    });
+client.user.setActivity("with depression", {
+  type: "STREAMING",
+  url: "https://www.twitch.tv/monstercat"
 });
 
 
