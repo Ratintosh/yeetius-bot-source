@@ -23,6 +23,28 @@ var myArray = [
 ];
 //randomizer
 
+var eightballarray = [
+  "As I see it, yes.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+  "Don’t count on it.",
+  "It is certain.",
+  "It is decidedly so.",
+  "Most likely.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Outlook good.",
+  "Reply hazy, try again.",
+  "Signs point to yes.",
+  "Very doubtful.",
+  "Without a doubt.",
+  "Yes.",
+  "Yes – definitely.",
+  "You may rely on it."
+];
 
 client.on('ready', () => { client.user.setGame('Use .help for help'); });
 
@@ -171,6 +193,17 @@ client.on('message', message => {
 client.on('message', message => {
    if (message.content === ".status") { //Supposed to delete message
       message.channel.send('All systems are go!');
+   }
+});
+
+
+client.on('message', message => {
+   if (message.content.startsWith(".8ball")) { //Supposed to delete message
+    var answer = myArray[Math.floor(Math.random()*eightballarray.length)];
+      message.channel.send("You shake the ball...");
+      setTimeout(function(){
+          message.channel.send(answer);
+      }, 3000);
    }
 });
 
