@@ -28,10 +28,7 @@ var food4 = myArray[Math.floor(Math.random()*myArray.length)];
 
 
 
-client.user.setActivity("with depression", {
-  type: "STREAMING",
-  url: "https://www.twitch.tv/monstercat"
-});
+client.on('ready', () => { client.user.setGame('yourGame'); });
 
 
 
