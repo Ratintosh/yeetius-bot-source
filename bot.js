@@ -168,6 +168,12 @@ client.on('message', message => {
    }
 });
 
+var meme = require('memejs');
+
+meme('crappydesign', function(data, err) {
+  if (err) return console.error(err);
+  console.log(data);
+});
 
 
 
