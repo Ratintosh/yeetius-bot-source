@@ -155,7 +155,7 @@ client.on('message', message => {
     var food4 = myArray[Math.floor(Math.random()*myArray.length)];
 //REFRESHER FIRST?
 
-		message.channel.send(food1+food2+food3+food4);
+		message.channel.send(food1+"\n"+food2+"\n"+food3+"\n"+food4);
 
     message.channel.send('``This script was pulled from my website: https://foxxgaming.github.io/Projects/gen.html?``');
 
