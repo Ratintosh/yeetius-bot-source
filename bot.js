@@ -5,7 +5,6 @@ require('events').EventEmitter.defaultMaxListeners = 180;
 
 var step;
 
-for (let step = 0; step < 50000000; step++) {
 //Role picker
 var myArray = [
   "Pickles",
@@ -27,7 +26,7 @@ var food1 = myArray[Math.floor(Math.random()*myArray.length)];
 var food2 = myArray[Math.floor(Math.random()*myArray.length)];
 var food3 = myArray[Math.floor(Math.random()*myArray.length)];
 var food4 = myArray[Math.floor(Math.random()*myArray.length)];
-}
+
 
 
 client.on('ready', () => { client.user.setGame('Use .help for help'); });
