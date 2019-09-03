@@ -168,17 +168,6 @@ client.on('message', message => {
    }
 });
 
-var meme = require('memejs');
-
-client.on('message', message => {
-   if (message.content === ".meme") { //Supposed to delete message
-      meme('crappydesign', function(data, err) {
-      if (err) return console.error(err);
-      console.log(data);
-}
-}
-});
-
 
 
 client.login(process.env.BOT_TOKEN)
