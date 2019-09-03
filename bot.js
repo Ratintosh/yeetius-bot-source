@@ -28,7 +28,7 @@ var food4 = myArray[Math.floor(Math.random()*myArray.length)];
 
 
 
-client.on('ready', () => { client.user.setGame('yourGame'); });
+client.on('ready', () => { client.user.setGame('Use .help for help!'); });
 
 
 
