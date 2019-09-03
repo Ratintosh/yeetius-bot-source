@@ -3,6 +3,7 @@ const client = new Discord.Client()
 
 require('events').EventEmitter.defaultMaxListeners = 180;
 
+var step;
 
 //Role picker
 var myArray = [
@@ -168,6 +169,13 @@ client.on('message', message => {
    }
 });
 
-
+client.on('message', message => {
+  if (message.content === ".loop") {
+    for (let step = 0; step < 5; step++) {
+      // Runs 5 times, with values of step 0 through 4.
+      message.channel.send('repeat')
+    }
+  }
+});
 
 client.login(process.env.BOT_TOKEN)
