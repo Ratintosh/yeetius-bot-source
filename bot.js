@@ -175,5 +175,11 @@ client.on('message', message => {
    }
 });
 
+client.on('message', message => {
+   if (message.content === ".status") { //Supposed to delete message
+      message.channel.send('All systems are go!');
+   }
+});
+
 
 client.login(process.env.BOT_TOKEN)
