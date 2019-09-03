@@ -22,10 +22,6 @@ var myArray = [
   "Olives"
 ];
 //randomizer
-var food1 = myArray[Math.floor(Math.random()*myArray.length)];
-var food2 = myArray[Math.floor(Math.random()*myArray.length)];
-var food3 = myArray[Math.floor(Math.random()*myArray.length)];
-var food4 = myArray[Math.floor(Math.random()*myArray.length)];
 
 
 client.on('ready', () => { client.user.setGame('Use .help for help'); });
