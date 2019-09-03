@@ -149,17 +149,7 @@ client.on('message', message => {
   }
 });
 
-client.on('message', message => {
-	if (message.content === 'F') {
-		message.channel.send('f');
-	}
-});
 
-client.on('message', message => {
-	if (message.content === 'f') {
-		message.channel.send('f');
-	}
-});
 
 
 client.on('message', message => {
