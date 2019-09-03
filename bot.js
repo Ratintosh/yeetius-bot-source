@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
-require('events').EventEmitter.defaultMaxListeners = 100;
+require('events').EventEmitter.defaultMaxListeners = 180;
 
 
 //Role picker
