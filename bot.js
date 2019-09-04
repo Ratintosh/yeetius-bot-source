@@ -2,10 +2,9 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 
-var score
+var score = 0
 
-
-score = 0
+var score2 = score + 1;
 
 require('events').EventEmitter.defaultMaxListeners = 280;
 
@@ -199,7 +198,7 @@ client.on('message', message => {
 client.on('message', message => {
    if (message.content === ".salute") { //Supposed to delete message
      score = score + 1;
-      message.channel.send(`${message.author} has saluted. Total salutes: `+score);
+      message.channel.send(`${message.author} has saluted. Total salutes: `+score2);
       a
    }
 });
