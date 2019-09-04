@@ -178,7 +178,7 @@ client.on('message', message => {
 
 client.on('message', message => {
    if (message.content === ".help") { //Supposed to delete message
-      message.channel.send('**COMMANDS**\n-------------------\n.say <message> **Makes me say something**\n.info **Sends you bot info**\n.sandwich **Generates a random sandwich that you must eat**\n.8ball **Ask the 8ball anything!**\n.status **Used for development purposes.**');
+      message.channel.send('**COMMANDS**\n-------------------\n.say <message> **Makes me say something**\n.info **Sends you bot info**\n.sandwich **Generates a random sandwich that you must eat**\n.8ball **Ask the 8ball anything!**\n.status **Used for development purposes.**\n.salute **Salute to the cheese master!**');
    }
 });
 
