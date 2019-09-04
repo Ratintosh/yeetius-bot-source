@@ -206,7 +206,6 @@ client.on('message', message => {
 
 
 
-
 client.on('message', message => {
    if (message.content.startsWith(".8ball")) { //Supposed to delete message
     var answer = eightballarray[Math.floor(Math.random()*eightballarray.length)];
@@ -217,5 +216,10 @@ client.on('message', message => {
    }
 });
 
+client.on('message', message => {
+   if (message.content === ".update") { //Supposed to delete message
+      message.channel.send('Last update: **.update** command!');
+   }
+});
 
 client.login(process.env.BOT_TOKEN)
