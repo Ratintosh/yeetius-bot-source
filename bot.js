@@ -47,7 +47,8 @@ var eightballarray = [
   "Without a doubt.",
   "Yes.",
   "Yes – definitely.",
-  "You may rely on it."
+  "You may rely on it.",
+  "Nutella"
 ];
 
 client.on('ready', () => { client.user.setGame('yeetiusbot.tk || .help'); });
