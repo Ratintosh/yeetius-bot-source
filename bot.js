@@ -184,15 +184,17 @@ client.on('message', message => {
 
 
 
-client.on('message', message => {
-   if (message.content === ".salute") {
-      message.channel.send(`${user} has saluted!`);
-   }
-});
+
 
 client.on('message', message => {
    if (message.content === ".status") { //Supposed to delete message
       message.channel.send('All systems are go!');
+   }
+});
+
+client.on('message', message => {
+   if (message.content === ".salute") { //Supposed to delete message
+      message.channel.send('You have saluted.');
    }
 });
 
