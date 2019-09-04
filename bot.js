@@ -3,7 +3,7 @@ const client = new Discord.Client()
 
 var salute = 0
 
-require('events').EventEmitter.defaultMaxListeners = 180;
+require('events').EventEmitter.defaultMaxListeners = 280;
 
 var step;
 
