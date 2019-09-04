@@ -186,7 +186,8 @@ client.on('message', message => {
 
 client.on('message', message => {
    if (message.content === ".salute") { //Supposed to delete message
-      message.channel.send(${message.author}'has saluted!');
+      message.channel.send(`${message.author} has saluted!`);
+      message.channel.send(`Hello ${user}, and welcome!`);
    }
 });
 
@@ -206,7 +207,6 @@ client.on('message', message => {
       }, 3000);
    }
 });
-
 
 
 client.login(process.env.BOT_TOKEN)
