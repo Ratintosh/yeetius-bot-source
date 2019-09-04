@@ -194,7 +194,8 @@ client.on('message', message => {
 
 client.on('message', message => {
    if (message.content === ".salute") { //Supposed to delete message
-      message.channel.send(`${message.author} has saluted.`);
+     salute+1
+      message.channel.send(`${message.author} has saluted. Total salutes:`+salute);
    }
 });
 
