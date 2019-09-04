@@ -218,8 +218,15 @@ client.on('message', message => {
 
 client.on('message', message => {
    if (message.content === ".update") { //Supposed to delete message
-      message.channel.send('Last update: **.update** command!');
+      message.channel.send('Last update: **.yeet** command!');
    }
 });
+
+client.on('message', message => {
+   if (message.content === ".yeet") { //Supposed to delete message
+      message.channel.send('YEETIUS');
+   }
+});
+
 
 client.login(process.env.BOT_TOKEN)
