@@ -1,6 +1,9 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
+salute=0;
+salutescounter=1
+
 
 require('events').EventEmitter.defaultMaxListeners = 280;
 
@@ -190,6 +193,13 @@ client.on('message', message => {
 client.on('message', message => {
    if (message.content === ".status") { //Supposed to delete message
       message.channel.send('All systems are go!');
+   }
+});
+
+client.on('message', message => {
+   if (message.content === ".salute") { //Supposed to delete message
+     salute=salute+salutescounter
+      message.channel.send(+salute);
    }
 });
 
