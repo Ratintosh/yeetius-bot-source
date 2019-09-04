@@ -1,6 +1,9 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
+var score;
+
+score = 0;
 
 require('events').EventEmitter.defaultMaxListeners = 280;
 
@@ -152,6 +155,13 @@ client.on('message', message => {
 
 
 
+
+client.on('message', message => {
+	if (message.content === '.yeet') {
+    Score+=1;
+		message.reply(Score);
+	}
+});
 
 client.on('message', message => {
    if (message.content.startsWith(".say")) {
