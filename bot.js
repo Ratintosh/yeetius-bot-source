@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
-salute=0;
+salute=salute;
 salutescounter=1
 
 
