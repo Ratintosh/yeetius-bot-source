@@ -238,5 +238,6 @@ client.on('message', message => {
    }
 });
 
+//update shit lolx
 
 client.login(process.env.BOT_TOKEN)
