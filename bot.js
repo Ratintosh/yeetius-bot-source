@@ -1,7 +1,10 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
-salute=0;
+
+save=1
+
+salute=save;
 salutescounter=1
 
 
@@ -219,6 +222,12 @@ client.on('message', message => {
 client.on('message', message => {
    if (message.content === ".update") { //Supposed to delete message
       message.channel.send('Last update: **.yeet** command!');
+   }
+});
+
+client.on('message', message => {
+   if (message.content === ".salute save") { //Supposed to delete message
+      save=salute+1
    }
 });
 
