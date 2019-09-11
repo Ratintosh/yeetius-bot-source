@@ -228,6 +228,7 @@ client.on('message', message => {
 client.on('message', message => {
    if (message.content === ".salute save") { //Supposed to delete message
       save=salute+1
+      message.channel.send('Saved salute count! You may reset the bot.')
    }
 });
 
