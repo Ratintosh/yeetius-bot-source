@@ -170,6 +170,13 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+   if (message.content.startsWith("im")) {
+      message.delete(); //Supposed to delete message
+      message.channel.send(message.content.slice(3, message.content.length));
+   }
+});
+
+client.on('message', message => {
 	if (message.content === '.sandwich') {
     var food1 = myArray[Math.floor(Math.random()*myArray.length)];
     var food2 = myArray[Math.floor(Math.random()*myArray.length)];
