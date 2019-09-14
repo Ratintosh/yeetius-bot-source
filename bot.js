@@ -172,7 +172,7 @@ client.on('message', message => {
 client.on('message', message => {
    if (message.content.startsWith("im")) {
       message.delete(); //Supposed to delete message
-      message.channel.send(message.content.slice(3, message.content.length));
+      message.channel.send("Hi," message.content.slice(3, message.content.length));
    }
 });
 
