@@ -2,10 +2,10 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 
-save=1
+save=420
 
 salute=save;
-salutescounter=420
+salutescounter=1
 
 
 require('events').EventEmitter.defaultMaxListeners = 280;
