@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 
-save=420
+save=0
 
 salute=save;
 salutescounter=1
@@ -205,7 +205,7 @@ client.on('message', message => {
 client.on('message', message => {
    if (message.content === ".salute") { //Supposed to delete message
      salute=salute+salutescounter
-      message.channel.send(`${message.author} has saluted to the cheese god. Total salutes: `+salute);
+      message.channel.send(`${message.author} has saluted to the cheese god. Total salutes today: `+salute"\n``Note: The salute counter resets to 0 tomorrow!``");
    }
 });
 
