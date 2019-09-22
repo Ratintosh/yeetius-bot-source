@@ -249,7 +249,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-   if (message.content === ".yeet") { //Supposed to delete message
+   if (message.content === ".testcommand") { //Supposed to delete message
    const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
