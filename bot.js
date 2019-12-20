@@ -54,6 +54,8 @@ var eightballarray = [
   "Nutella"
 ];
 
+var yum = 1;
+
 client.on('ready', () => { client.user.setGame('yeetiusbot.tk || .help'); });
 
 
@@ -247,6 +249,20 @@ client.on('message', message => {
 
    }
 });
+
+client.on('ready', () => {
+while (yum=1) {
+setInterval(function () {
+   client.channels.get("618213192484651069").send("!d bump");
+}, 7200000); // 1 hour
+}
+  
+})
+
+
+
+
+
 
 client.on('message', message => {
    if (message.content === ".testcommand") { //Supposed to delete message
