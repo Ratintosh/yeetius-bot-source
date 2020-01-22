@@ -56,7 +56,7 @@ var eightballarray = [
 
 var yum = 1;
 
-client.on('ready', () => { client.user.setGame('yeetiusbot.tk || .help'); });
+client.on('ready', () => { client.user.setGame('SpaceBot || .help'); });
 
 
 
@@ -145,13 +145,6 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === '.info') {
-		message.reply('check your dms!');
-    message.author.send('**Welcome to The Rat Army.**\nBe sure to read #rules in my server.\n``This bot was created by Thomas H.``');
-}
-});
-
-client.on('message', message => {
 	if (message.content === 'creeper') {
     setTimeout(function(){
         message.channel.send('awwww man');
@@ -225,7 +218,7 @@ client.on('message', message => {
 
 client.on('message', message => {
    if (message.content === ".update") { //Supposed to delete message
-      message.channel.send('Last update: Fixed some code causing the bot to not function properly.');
+      message.channel.send('Last update: **New Name and Icon!**');
    }
 });
 
