@@ -225,7 +225,7 @@ client.on('message', message => {
 
 client.on('message', message => {
    if (message.content === ".update") { //Supposed to delete message
-      message.channel.send('Last update: **.yeet** command!');
+      message.channel.send('Last update: Fixed some code causing the bot to not function properly.');
    }
 });
 
@@ -241,24 +241,6 @@ client.on('message', message => {
       message.channel.send('YEETIUS');
    }
 });
-
-
-
-client.on('message', message => {
-   if (message.content === ".yeet") { //Supposed to delete message
-
-   }
-});
-
-client.on('ready', () => {
-while (yum=1) {
-setInterval(function () {
-   client.channels.get("618213192484651069").send("!d bump");
-}, 7200000); // 1 hour
-}
-  
-})
-
 
 
 
