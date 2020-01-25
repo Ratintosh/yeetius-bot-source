@@ -58,6 +58,20 @@ var yum = 1;
 
 client.on('ready', () => { client.user.setGame('SpaceBot || .help'); });
 
+var forbidenWords = ["furry", "thomas is a furry", "thomas is a","th0mas is","th0mas_is","th0mas_i5","thomas_is","furry","a furry"];
+client.on('message', message => {
+
+
+if (forbidenWords.includes(message.content.toLowerCase())) {
+    message.delete();
+  }
+});
+
+client.on('message', message => {
+if (message.content.toLowerCase().startsWith(forbidenWords)) {
+    message.delete();
+};
+});
 
 
 
