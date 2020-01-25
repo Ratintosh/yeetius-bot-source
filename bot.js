@@ -178,6 +178,12 @@ client.on('message', message => {
    }
 });
 
+client.on('message', message => {
+   if (message.content.startsWith("GG")) {
+      message.delete(); //Supposed to delete message
+   }
+});
+
 
 
 client.on('message', message => {
