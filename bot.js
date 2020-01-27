@@ -10,6 +10,14 @@ salutescounter=1
 
 require('events').EventEmitter.defaultMaxListeners = 280;
 
+var streak = 0
+var bruhs = ["bruh", 
+":regional_indicator_b: :regional_indicator_r: :regional_indicator_u: :regional_indicator_h:", 
+":regional_indicator_b: :regional_indicator_r: :regional_indicator_u: :regional_indicator_h: :grey_exclamation:"
+];
+
+
+
 var step;
 
 //Role picker
@@ -255,7 +263,23 @@ client.on('message', message => {
    }
 });
 
+client.on('message', message => {
 
+
+if (message.channel.id === '669006382963490827') { //Change to 669006382963490827 after dev
+      
+    if (bruhs.includes(message.content.toLowerCase())) {  
+        streak = streak + 1
+        message.channel.setTopic(streak) 
+    } else {
+      if (message.author.bot) return;
+      
+      message.reply("you broke the chain! Now we have to restart from 0. **Last streak: ``" + streak + "``**")
+
+      streak = 0
+    }
+  }
+});
 
 
 
