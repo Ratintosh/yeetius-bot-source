@@ -13,7 +13,14 @@ require('events').EventEmitter.defaultMaxListeners = 280;
 var streak = 0
 var bruhs = ["bruh", 
 ":regional_indicator_b: :regional_indicator_r: :regional_indicator_u: :regional_indicator_h:", 
-":regional_indicator_b: :regional_indicator_r: :regional_indicator_u: :regional_indicator_h: :grey_exclamation:"
+":regional_indicator_b: :regional_indicator_r: :regional_indicator_u: :regional_indicator_h: :grey_exclamation:",
+	     "bruh momento",
+	     "bruh moment",
+	     "big bruh",
+	     "big bruh moment",
+	     "bru",
+	     "br",
+	     "bruh wtf"
 ];
 
 
