@@ -20,7 +20,8 @@ var bruhs = ["bruh",
 	     "big bruh moment",
 	     "bru",
 	     "br",
-	     "bruh wtf"
+	     "bruh wtf",
+	     "!br -s"
 ];
 
 
@@ -107,8 +108,14 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-	if (message.content === 'Im bored') {
+	if (message.content === 'im bored') {
 		message.channel.send('go jump off a building then');
+	}
+});
+
+client.on('message', message => {
+	if (message.content === '!br -s') {
+		message.channel.send('The current streak is: ' + streak + '!');
 	}
 });
 
