@@ -21,9 +21,8 @@ var bruhs = ["bruh",
 	     "bru",
 	     "br",
 	     "bruh wtf",
-	     "!br -s"
+	     "br -s"
 ];
-
 
 
 var step;
@@ -96,6 +95,12 @@ client.on('ready', () => {
 })
 
 client.on('message', message => {
+	if (message.content === '.br -s') {
+		message.channel.send('The current streak is: ' + streak + '!');
+	}
+});
+
+client.on('message', message => {
 	if (message.content === ':c') {
 		message.channel.send('HA!');
 	}
@@ -108,14 +113,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-	if (message.content === 'im bored') {
+	if (message.content === 'Im bored') {
 		message.channel.send('go jump off a building then');
-	}
-});
-
-client.on('message', message => {
-	if (message.content === '!br -s') {
-		message.channel.send('The current streak is: ' + streak + '!');
 	}
 });
 
@@ -324,4 +323,4 @@ channel.send(exampleEmbed);
 
 //update shit lolx
 
-client.login(process.env.BOT_TOKEN)
+client.login(process.env.BOT_TOKEN);
